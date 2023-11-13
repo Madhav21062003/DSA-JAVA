@@ -13,22 +13,22 @@ public class PushAtBottom {
 
         pushAtBottom(4, s);
 
-        while (!s.isEmpty()){
+        while (!s.isEmpty()) {
             System.out.println(s.peek());
             s.pop();
         }
 
     }
-    static void pushAtBottom(int data, Stack<Integer> s){
 
-        if (s.isEmpty()){
+    static void pushAtBottom(int data, Stack<Integer> s) {
+
+        if (s.isEmpty()) {
             s.push(data);
             return;
         }
-
-        //  Remove the top element
+        // Remove the top element
         int top = s.pop();
-        pushAtBottom(data,s);
+        pushAtBottom(data, s);
 
         // fill the previously popped elements into the stack
         s.push(top);
