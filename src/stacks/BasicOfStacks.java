@@ -18,7 +18,7 @@ public class BasicOfStacks {
 
         st.pop();
         System.out.println("Removing the top  most element "+st);
-        System.out.println(st.size());
+        System.out.println(st.size());  
         
     }
 }
