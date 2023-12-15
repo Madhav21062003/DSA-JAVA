@@ -16,25 +16,28 @@ public class DequeImplementation {
         deque.addLast(4);
 
         System.out.println(deque);
-        deque.addFirst(5);
-        System.out.println(deque);
+//        deque.addFirst(5);
+//        System.out.println(deque);
+//
+//        deque.removeLast();
+//        System.out.println(deque);
+//
+//        deque.removeFirst();
+//        System.out.println(deque);
+//
+//        System.out.println(deque.getFirst());
+//        System.out.println(deque.getLast());
+//
+//        deque.add(6);
+//        System.out.println(deque);
+//
+//        deque.remove();
+//        System.out.println(deque);
+//
+//        deque.removeAll(deque);
+//        System.out.println(deque);
 
-        deque.removeLast();
-        System.out.println(deque);
-
-        deque.removeFirst();
-        System.out.println(deque);
-
-        System.out.println(deque.getFirst());
-        System.out.println(deque.getLast());
-
-        deque.add(6);
-        System.out.println(deque);
-
-        deque.remove();
-        System.out.println(deque);
-
-        deque.removeAll(deque);
+        deque.poll();
         System.out.println(deque);
 
 
