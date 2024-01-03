@@ -1,4 +1,4 @@
-package loops.homework;
+package homework;
 
 public class HomeworkDay8 {
     public static void main(String[] args) {
