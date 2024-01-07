@@ -34,7 +34,38 @@ public class HomeworkDay10 {
         }
 
         // Q-3
+        for (int i = 0; i < n; i++) {
+            // Print spaces
+            for (int j = 0; j < n - i - 1; j++) {
+                System.out.print(" ");
+            }
+
+            // Print decreasing numbers
+            for (int k = 5; k > n - i - 1; k--) {
+                System.out.print(k);
+            }
+
+            // Move to the next line after each row
+            System.out.println();
+        }
 
         // Q-4
+        for (int i = 0; i < n; i++) {
+            // Print spaces
+            for (int j = 0; j < n - i - 1; j++) {
+                System.out.print(" ");
+            }
+
+            // Print characters in decreasing order
+            for (int k = n; k > n - i - 1; k--) {
+                char ch = (char) ('A' + k - 1);
+                System.out.print(ch);
+            }
+
+            // Move to the next line after each row
+            System.out.println();
+        }
+
+
     }
 }
