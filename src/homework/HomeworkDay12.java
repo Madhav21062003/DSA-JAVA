@@ -41,5 +41,11 @@ public class HomeworkDay12 {
             System.out.println("YES");
         else
             System.out.println("NO");
+
+        // 5. 2 * 3 - 48 == 5/4*6
+        boolean ans1 = 2 * 3 - 48 == 5/4*6;
+        System.out.println(ans1);
+
+
     }
 }
