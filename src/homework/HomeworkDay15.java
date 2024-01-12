@@ -105,6 +105,23 @@ public class HomeworkDay15 {
         }
 
         // 5: Print all the Capital and small letters  using a while loop. It means A-Z, then a-z.
+        char i;
+        System.out.println("The Alphabets from A to Z are: ");
+        // Traverse each character using a
+        // while loop
+        i = 'A';
+        while (i <= 'Z') {
+            System.out.print(i + " ");
+            i++;
+        }
+        // Display the lowercase alphabets
+        i = 'a';
+        System.out.println("\nThe Alphabets from a to z are: ");
+        while (i <= 'z') {
+            System.out.print(i + " ");
+            i++;
+        }
+
 
 
         // 6: Give a number n, find if it is prime or not, use a while loop and break here to solve it.
