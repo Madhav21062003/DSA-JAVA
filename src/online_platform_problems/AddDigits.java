@@ -1,4 +1,4 @@
-package leetcode_problems;
+package online_platform_problems;
 
 import java.util.Scanner;
 
