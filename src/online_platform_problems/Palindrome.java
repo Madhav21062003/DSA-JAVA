@@ -7,6 +7,7 @@ public class Palindrome {
 
         Scanner sc = new Scanner(System.in);
 
+        // Leetcode 9
         int num  = sc.nextInt();
         int x = num;
         int ans = 0, rem;
