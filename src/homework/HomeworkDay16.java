@@ -66,27 +66,30 @@ public class HomeworkDay16 {
         // Write a program to convert Octal numbers to binary numbers
 
         // Step -1 -> Octal to Decimal
-        int octal_1 = 41, decimal_1 = 0, mul_6 = 1;
+        int i = 0;
+        int decimalValue = 0;
+        int binaryValue = 0;
+        int octalValue = 315;
 
-        while (octal_1 != 0) {
-            rem = octal_1 % 10;
-            octal_1 = octal_1 / 10;
-            decimal_1 = decimal_1 + rem * mul_6;
-            mul_6 = mul_6 * 8;
+        // converting octal number
+        // into its decimal equivalent
+        while (octalValue != 0) {
+            decimalValue
+                    += (octalValue % 10) * Math.pow(8, i);
+            ++i;
+            octalValue /= 10;
         }
 
-        // Step -2 -> Decimal to Binary
-        int binary = 0, mul_7 = 1, n_5 = decimal_1;
+        i = 1;
 
-        while (n_5 != 0) {
-            rem = n_5 % 2;
-            n_5 = n_5 / 2;
-            binary = binary + rem * mul_7;
-            mul_7 = mul_7 * 10;
+        // converting generated decimal number
+        // to its binary equivalent
+        while (decimalValue != 0) {
+            binaryValue += (decimalValue % 2) * i;
+            decimalValue /= 2;
+            i *= 10;
         }
-
-        System.out.println(binary);
-
+        System.out.println(binaryValue);
 
     }
 }
