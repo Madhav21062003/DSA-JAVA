@@ -14,7 +14,15 @@ public class HomeworkDay16 {
         System.out.println(ans);
 
         // Write a program to convert decimal numbers to binary numbers using a for loop.
-
+            int ans_1 = 0, mul_1 = 1;
+            int n_1 = 7;
+            while (n_1 != 0){
+                rem = n_1 % 2;
+                n_1 = n_1 / 2;
+                ans_1 = ans_1 + rem*mul_1;
+                mul_1 = mul_1 * 10;
+            }
+        System.out.println(ans_1);
 
         // Write a program to convert decimal numbers to Octal numbers.
 
