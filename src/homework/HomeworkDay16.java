@@ -35,9 +35,17 @@ public class HomeworkDay16 {
         System.out.println(ans_2);
 
         // Write a program to convert Octal numbers to decimal numbers.
-
+        int ans_3 = 0, mul_3 = 1,n_3 = 112;
+        while (n_3 != 0){
+            rem  = n_3 % 10;
+            n_3  = n_3 / 10;
+            ans_3 = ans_3 + rem * mul_3;
+            mul_3 = mul_3 * 8;
+        }
+        System.out.println(ans_3);
 
         // Write a program to convert binary to Octal numbers
+
 
         // Write a program to convert Octal numbers to binary numbers
     }
