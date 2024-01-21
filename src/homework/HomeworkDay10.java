@@ -3,7 +3,7 @@ package homework;
 public class HomeworkDay10 {
     public static void main(String[] args) {
 
-
+fff
         // Q-1
         int n = 5 ;
         for (int row = 1; row <= n; row++) {
