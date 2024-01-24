@@ -34,7 +34,7 @@ public class Basics {
 
 
         int ar[]={33,3,4,5};//declaration, instantiation and initialization
-//printing array
+        //printing array
         for(int i=0;i<ar.length;i++)//length is the property of array
             System.out.println(ar[i]);
 
