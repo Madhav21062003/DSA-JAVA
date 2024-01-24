@@ -37,5 +37,16 @@ public class Basics {
 //printing array
         for(int i=0;i<ar.length;i++)//length is the property of array
             System.out.println(ar[i]);
+
+
+        int arr1[]=get();
+//printing the values of an array
+        for(int i=0;i<arr1.length;i++)
+            System.out.println(arr1[i]);
+    }
+
+    //creating method which returns an array
+    static int[] get(){
+        return new int[]{10,30,50,90,60};
     }
 }
