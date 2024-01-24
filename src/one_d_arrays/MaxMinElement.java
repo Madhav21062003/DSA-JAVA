@@ -9,12 +9,18 @@ public class MaxMinElement {
 
     static void maxMinElement(int[] arr){
         int maxElement = Integer.MIN_VALUE;
-
+        int minElement = Integer.MAX_VALUE;
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] > maxElement){
                 maxElement = arr[i];
             }
         }
-        System.out.println(maxElement);
+        System.out.println("Maximum Element in the array: "+maxElement);
+
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] < minElement)
+                minElement = arr[i];
+        }
+        System.out.println("Minimum Element in the array: "+minElement);
     }
 }
