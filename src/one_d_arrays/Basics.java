@@ -40,7 +40,7 @@ public class Basics {
 
 
         int arr1[]=get();
-//printing the values of an array
+        //printing the values of an array
         for(int i=0;i<arr1.length;i++)
             System.out.println(arr1[i]);
     }
