@@ -1,4 +1,5 @@
 package one_d_arrays;
+
 import java.util.Scanner;
 
 public class Basics {
@@ -13,14 +14,23 @@ public class Basics {
 
         System.out.println("Enter the array Elements");
         for (int i = 0; i < arr.length; i++) {
-            arr[i]  = sc.nextInt();
+            arr[i] = sc.nextInt();
         }
 
         System.out.println("Array elements are");
-        for (int i = 0; i < arr.length ; i++) {
-            System.out.print(arr[i]+" ");
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + " ");
         }
 
+        int a[] = new int[5];//declaration and instantiation
+        a[0] = 10;//initialization
+        a[1] = 20;
+        a[2] = 70;
+        a[3] = 40;
+        a[4] = 50;
+        //traversing array
+        for (int i = 0; i < a.length; i++)//length is the property of array
+            System.out.println(a[i]);
 
 
     }
