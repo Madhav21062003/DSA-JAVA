@@ -21,5 +21,7 @@ public class Basics {
             System.out.print(arr[i]+" ");
         }
 
+
+
     }
 }
