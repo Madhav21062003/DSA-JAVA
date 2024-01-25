@@ -7,7 +7,7 @@ public class SecondMax {
 
         int[] arr = {1, 2, 3, 4, 5, 16, 7, 8, 98};
         int result = secondMaxElement(arr);
-//        System.out.println(result);
+        System.out.println("Second Max Element in the array is: "+result);
 
         int[] a = {2,6,4,3,8,5,1};
         System.out.println("Second Max Element in the array is: "+secondMax(a));
