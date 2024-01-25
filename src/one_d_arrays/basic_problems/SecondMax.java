@@ -7,11 +7,25 @@ public class SecondMax {
 
         int[] arr = {1, 2, 3, 4, 5, 16, 7, 8, 98};
         int result = secondMaxElement(arr);
-        System.out.println(result);
+//        System.out.println(result);
+
+        int[] a = {2,6,4,3,8,5,1};
+        System.out.println("Second Max Element in the array is: "+secondMax(a));
     }
 
     private static int secondMax(int[] arr) {
-        return 1;
+            
+        int ans = Integer.MIN_VALUE;
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] > ans)
+                ans = arr[i];
+        }
+                int secondMax = Integer.MIN_VALUE;
+        for (int i = 0; i < arr.length; i++) {
+            if ( ans != arr[i])
+             secondMax = Math.max(secondMax, arr[i]);
+        }
+        return secondMax;
     }
 
     //  Using Sorting Method in java
