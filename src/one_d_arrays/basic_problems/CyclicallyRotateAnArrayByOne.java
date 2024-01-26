@@ -3,7 +3,8 @@ package one_d_arrays.basic_problems;
 public class CyclicallyRotateAnArrayByOne {
     public static void main(String[] args) {
 
-        int arr[] = {1, 2, 3, 4, 5};
+
+        int arr[] = {1, 2, 3, 4, 5};  // Rotating Array By one
         System.out.println(arr[arr.length-1]);
         rotate(arr,5);
 
