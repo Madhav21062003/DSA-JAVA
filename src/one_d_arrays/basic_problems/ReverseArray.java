@@ -11,6 +11,7 @@ public class ReverseArray {
 
     }
 
+//    Reverse the array element without using extra space
     static int[] reverseArr(int[]arr){
         int j = 0;
         int temp;
