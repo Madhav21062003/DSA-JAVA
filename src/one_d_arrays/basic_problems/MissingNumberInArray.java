@@ -8,6 +8,7 @@ public class MissingNumberInArray {
         System.out.println("Missing Number in your array is: "+missingNumber(a,7));
     }
 
+    // Finding the missing number in the consecutive array
     static int missingNumber(int[] arr, int N){
         int missingNumber, sumOfArrayElements = 0;
 
