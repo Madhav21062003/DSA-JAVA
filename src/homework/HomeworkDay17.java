@@ -16,6 +16,6 @@ public class HomeworkDay17 {
 
         // 5: Print “Hello Coder Army” n times using Function.
 
-        //
+        //  6: Given two numbers n, r. Find nCr (Combination). Use Function here.
     }
 }
