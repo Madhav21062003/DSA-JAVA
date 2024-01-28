@@ -6,6 +6,7 @@ public class PrintOddNumbers {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
+        // Display only the odd Number as output
         System.out.println("Enter the Number: ");
         int num = sc.nextInt();
 
