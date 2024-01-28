@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class PrintDivisibles {
     public static void main(String[] args) {
 
+        // Find the divisible of the particular number
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter Number: ");
         int number = sc.nextInt();
