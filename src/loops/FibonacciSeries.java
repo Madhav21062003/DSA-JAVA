@@ -6,6 +6,7 @@ public class FibonacciSeries {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
+        // Get the Nth fibonacci number using Loops
         System.out.println("Enter the number");
         int n = sc.nextInt();
         if (n <= 1) {
