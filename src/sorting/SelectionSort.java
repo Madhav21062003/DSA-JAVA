@@ -15,7 +15,7 @@ public class SelectionSort {
         System.out.println("Sort In Descending Order");
         selectionSortInDescending(arr_1);
         for (int j : arr_1) {
-            System.out.print(j + " ");
+             System.out.print(j + " ");
         }
 
     }
