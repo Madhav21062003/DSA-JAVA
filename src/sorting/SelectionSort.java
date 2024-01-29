@@ -12,7 +12,7 @@ public class SelectionSort {
         System.out.println();
 
         int[] arr_1 = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-        System.out.println("Sort In Descending Order");
+         System.out.println("Sort In Descending Order");
         selectionSortInDescending(arr_1);
         for (int j : arr_1) {
              System.out.print(j + " ");
