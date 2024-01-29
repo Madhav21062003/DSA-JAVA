@@ -38,6 +38,8 @@ public class SelectionSort {
         }
     }
 
+
+    // In Descending Order
     static void selectionSortInDescending(int[] arr){
         int n = arr.length;
 
