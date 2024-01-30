@@ -11,6 +11,7 @@ public class BubbleSort {
         }
     }
 
+    // In Increasing Order
     static void bubbleSort(int[] arr) {
         int n = arr.length;
 
@@ -29,6 +30,28 @@ public class BubbleSort {
                     break;
             }
         }
-
     }
+
+    // In Decreasing Order
+
+    static void bubbleSortDecreasing(int[] arr) {
+        int n = arr.length;
+
+        for (int i = n - 2; i >= 0; i--) {
+
+            boolean swappingOccur = false;
+            for (int j = 0; j <= i; j++) {
+                if (arr[j] < arr[j + 1]) {
+                    int temp = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = temp;
+                    swappingOccur = true;
+                }
+
+                if (!swappingOccur)
+                    break;
+            }
+        }
+    }
+
 }
