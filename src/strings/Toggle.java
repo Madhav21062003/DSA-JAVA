@@ -34,4 +34,5 @@ public class Toggle {
         }
         System.out.println(str);
     }
+
 }
