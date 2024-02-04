@@ -45,7 +45,7 @@ public class HomeworkDay12 {
         // 5. 2 * 3 - 48 == 5/4*6
         boolean ans1 = 2 * 3 - 48 == 5/4*6;
         System.out.println(ans1);
-
+      // Homework Completed
 
     }
 }
