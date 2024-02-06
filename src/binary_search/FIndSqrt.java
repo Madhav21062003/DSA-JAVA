@@ -11,7 +11,7 @@ public class FIndSqrt {
         int ans1 = findSqrt(16);
         System.out.println(ans1);
     }
-    // hdhjsjsj hhdjajs  
+    // hdhjsjsj hhdjajs  ghgggg
 
     static int findSqrtUsingBS(int num) {
         long ans = -1;
