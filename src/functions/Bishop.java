@@ -5,6 +5,7 @@ public class Bishop {
 
 
     }
+// calculating the number of Bishop's moves
 
     static int minBishopMoves(int A, int B){
         int count = 0;
