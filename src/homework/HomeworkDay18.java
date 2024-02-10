@@ -91,7 +91,6 @@ public class HomeworkDay18 {
         }
 
        ans = (fact1) / ( (fact2) * (fact3) ) ;
-
       return ans;
     }
 }
