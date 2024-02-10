@@ -42,7 +42,15 @@ public class HomeworkDay19 {
 
         // Your code here
 
-        return 0;
+        int ans = a ^ b;
+        int count = 0 ;
+
+        // Calculate the number of 1
+        while(ans > 0){
+            ans = ans & (ans-1);
+            count++;
+        }
+        return count;
     }
 
 
