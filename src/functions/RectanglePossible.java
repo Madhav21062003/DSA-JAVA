@@ -6,7 +6,7 @@ public class RectanglePossible {
         boolean ans = rectanglePossible(1,2,1,2);
         System.out.println(ans);
     }
-
+   //Function to check the reactangle is possible or not
     static boolean rectanglePossible(int a, int b, int c, int d){
         if (a == b && a==c && a == d){
             return false;

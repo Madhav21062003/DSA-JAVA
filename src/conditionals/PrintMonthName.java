@@ -11,8 +11,8 @@ public class PrintMonthName {
         month = sc.nextInt();
         if (month == 1)
             System.out.println("January");
-
-        else if (month == 2)
+             //conditions for months num
+              else if (month == 2)
             System.out.println("February");
 
         else if (month == 3)
