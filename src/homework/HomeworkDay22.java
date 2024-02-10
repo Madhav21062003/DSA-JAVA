@@ -1,5 +1,6 @@
 package homework;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class HomeworkDay22 {
@@ -8,6 +9,7 @@ public class HomeworkDay22 {
         int[] arr = {1, 2, 3, 45, 6};
         System.out.println(sumOfElements(arr));
         System.out.println(secondLargestElement(arr));
+        System.out.println(thirdSmallest(arr));
 
         int[] avgArr = new int[18];
         avgArr = new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18};
@@ -90,7 +92,18 @@ public class HomeworkDay22 {
     }
 
     // 6: Find the third smallest element in an array of unique elements size n. Where n>3.
+    static int thirdSmallest(int[] arr){
+        Arrays.sort(arr);
+
+        return arr[2];
+    }
 
 
     // 7: What is Byte addressable?
+        /*
+        * Byte addressability enables the CPU to fetch each program instruction residing in memory in order to execute it.
+        * It enables data to be processed. Even a single numeric digit can be calculated,
+        * compared and copied independently of the data residing in the byte before or after it.
+        * */
+
 }
