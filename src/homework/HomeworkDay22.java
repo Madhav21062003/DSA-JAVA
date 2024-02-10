@@ -1,5 +1,7 @@
 package homework;
 
+import java.util.Scanner;
+
 public class HomeworkDay22 {
     public static void main(String[] args) {
 
@@ -9,6 +11,9 @@ public class HomeworkDay22 {
         int[] avgArr = new int[18];
         avgArr = new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18};
         System.out.println(calcAvg(avgArr));
+
+        char[] ch = {'a','b','c','d','e','f'};
+        displayChar(ch);
 
     }
 
@@ -48,6 +53,21 @@ public class HomeworkDay22 {
 
 
     // 4: Create an array of char types and store ‘a’ to ‘z’ in it. Then print the element of the arrays.
+        static void displayChar(char[] ch){
+            Scanner sc = new Scanner(System.in);
+            char[] ch1 = new char[ch.length];
+
+            // Store 'a' to 'z' in the array
+            for (int i = 0; i < ch.length; i++) {
+                ch1[i] = (char) ('a' + i);
+            }
+
+            // Print the elements of the array
+            System.out.println("Elements of the character array are: ");
+            for (char c : ch1){
+                System.out.print(c+" ");
+            }
+        }
 
     // 5: Find the second largest element in an array of unique elements of size n. Where n>3.
 
