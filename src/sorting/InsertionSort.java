@@ -10,6 +10,22 @@ public class InsertionSort {
     }
 
     static void insertionSort(int[] arr) {
+        int n = arr.length;
+
+        for (int i = 1; i < arr.length; i++) {
+            for (int j = n - 1; j > 0; j--)
+            {
+                if (arr[j] < arr[j - 1])
+                {
+                    int temp = arr[j];
+                    arr[j] = arr[j - 1];
+                    arr[j - 1] = temp;
+                }
+                else
+                    break;
+
+            }
+        }
 
     }
 }
