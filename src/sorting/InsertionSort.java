@@ -13,7 +13,7 @@ public class InsertionSort {
         int n = arr.length;
 
         for (int i = 1; i < arr.length; i++) {
-            for (int j = n - 1; j > 0; j--)
+            for (int j = i; j > 0; j--)
             {
                 if (arr[j] < arr[j - 1])
                 {
