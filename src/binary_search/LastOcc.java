@@ -11,7 +11,7 @@ public class LastOcc {
     static int latOcc(int[] arr, int key) {
         int start = 0;
         int end = arr.length - 1;
-        int mid = start + (end - start) / 2;
+        int mid;
         int lastOcc = -1;
 
         while (start <= end) {

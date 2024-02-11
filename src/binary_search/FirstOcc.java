@@ -12,10 +12,8 @@ public class FirstOcc {
         int start = 0;
         int end = arr.length - 1;
         int firstOcc = -1;
-        int mid = start + (end - start) / 2;
-
         while (start <= end) {
-            mid = start + (end - start) / 2;
+          int  mid = start + (end - start) / 2;
             if (arr[mid] == target) {
                 firstOcc = mid;
                 end = mid - 1;
