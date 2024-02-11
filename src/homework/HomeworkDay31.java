@@ -76,7 +76,7 @@ public class HomeworkDay31 {
     }
 
     // Problem Link 69 -> https://leetcode.com/problems/sqrtx/
-    public int mySqrt(int x) {
+    public static int mySqrt(int x) {
 
         int start = 1, end = x, ans = 1;
 
@@ -94,6 +94,33 @@ public class HomeworkDay31 {
         return ans;
     }
 
+    // Problem - 1539. Kth Missing Positive Number
+    // problem link - https://leetcode.com/problems/kth-missing-positive-number/description/
+    public static int findKthPositive(int[] arr, int k) {
 
+        // Brute Force Approach
+        // for(int i=0; i<arr.length; i++){
+        //     if(arr[i] <= k)
+        //     k++;
+        //     else
+        //         break;
+        // }
+        //     return k;
+
+        // Optimised Approach using Binary Search
+        int start =0, end = arr.length-1;
+
+        while(start <= end){
+            int mid = start + (end - start) / 2;
+            int missingNumbers = arr[mid] - (mid + 1);
+
+            if(missingNumbers < k)
+                start = mid + 1 ;
+            else
+                end = mid - 1;
+        }
+
+        return end + k + 1 ;
+    }
 
 }
