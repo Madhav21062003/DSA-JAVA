@@ -3,7 +3,7 @@ package homework;
 public class HomeworkDay31 {
     public static void main(String[] args) {
 
-        int[] arr = {1,3,5,7};
+        int[] arr = {1, 3, 5, 7};
         int key = 6;
         System.out.println(searchInsert(arr, key));
     }
@@ -13,41 +13,39 @@ public class HomeworkDay31 {
 
     public static int[] searchRange(int[] nums, int target) {
 
-        int[] result = {firstOccurence(nums, target), lastOccurence(nums, target) };
+        int[] result = {firstOccurence(nums, target), lastOccurence(nums, target)};
         return result;
     }
 
-    static int firstOccurence(int[] arr, int target){
+    static int firstOccurence(int[] arr, int target) {
         int start = 0;
-        int end = arr.length-1;
+        int end = arr.length - 1;
         int first = -1;
-        while (start <= end){
-            int mid = start + (end-start) / 2 ;
-            if (arr[mid] == target){
+        while (start <= end) {
+            int mid = start + (end - start) / 2;
+            if (arr[mid] == target) {
                 first = mid;
-                end = mid-1;
+                end = mid - 1;
             } else if (arr[mid] < target) {
-                start = mid + 1 ;
-            }
-            else
+                start = mid + 1;
+            } else
                 end = mid - 1;
         }
         return first;
     }
 
-    static int lastOccurence(int[] arr, int target){
+    static int lastOccurence(int[] arr, int target) {
         int start = 0;
-        int end = arr.length-1;
+        int end = arr.length - 1;
         int last = -1;
-        while (start <= end){
-            int mid = start + (end-start) / 2 ;
-            if (arr[mid] == target){
+        while (start <= end) {
+            int mid = start + (end - start) / 2;
+            if (arr[mid] == target) {
                 last = mid;
                 start = mid + 1;
             } else if (arr[mid] < target) {
-                start = mid + 1 ;
-            }
-            else
+                start = mid + 1;
+            } else
                 end = mid - 1;
         }
         return last;
@@ -57,24 +55,45 @@ public class HomeworkDay31 {
     // Problem link - https://leetcode.com/problems/search-insert-position/description/
     //  35. Search Insert Position
 
-    public static  int searchInsert(int[] arr, int target) {
-        int start = 0, end = arr.length-1; int index = -1;
-        while (start<= end){
-            int mid = start + (end - start)/ 2;
+    public static int searchInsert(int[] arr, int target) {
+        int start = 0, end = arr.length - 1;
+        int index = -1;
+        while (start <= end) {
+            int mid = start + (end - start) / 2;
 
-            if (arr[mid] == target){
+            if (arr[mid] == target) {
                 return mid;
-            }
-            else if (arr[mid] < target){
+            } else if (arr[mid] < target) {
                 start = mid + 1;
-            }
-            else{
+            } else {
                 index = mid;
-                end = mid -1;
+                end = mid - 1;
             }
         }
-        if (target > arr[arr.length-1])
+        if (target > arr[arr.length - 1])
             return arr.length;
         return index;
     }
+
+    // Problem Link 69 -> https://leetcode.com/problems/sqrtx/
+    public int mySqrt(int x) {
+
+        int start = 1, end = x, ans = 1;
+
+        while (start <= end) {
+            int mid = start + (end - start) / 2;
+            if (mid * mid == x)
+                return mid;
+
+            else if (mid * mid < x) {
+                ans = mid;
+                start = mid + 1;
+            } else
+                end = mid - 1;
+        }
+        return ans;
+    }
+
+
+
 }
