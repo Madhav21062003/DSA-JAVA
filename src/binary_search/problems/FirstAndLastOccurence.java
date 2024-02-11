@@ -7,6 +7,8 @@ public class FirstAndLastOccurence {
         System.out.println("First Occurrence of the Element =  "+firstOccurence(arr, 8));
         System.out.println("Last Occurrence of the Element =  "+lastOccurence(arr, 8));
     }
+    // Problem link - https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/description/
+    // 34. Find First and Last Position of Element in Sorted Array
     static int firstOccurence(int[] arr, int target){
         int start = 0;
         int end = arr.length-1;

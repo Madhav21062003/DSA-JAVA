@@ -8,6 +8,9 @@ public class SearchInsertPosition {
         System.out.println(searchInsert(arr, key));
     }
 
+
+    // Problem link - https://leetcode.com/problems/search-insert-position/description/
+    //  35. Search Insert Position
     public static  int  searchInsert(int[] nums, int target) {
 
         // Write your code here.
