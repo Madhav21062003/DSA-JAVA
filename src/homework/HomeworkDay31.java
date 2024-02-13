@@ -123,4 +123,44 @@ public class HomeworkDay31 {
         return end + k + 1 ;
     }
 
+    // link - https://www.geeksforgeeks.org/problems/count-the-zeros2550/1?page=1&difficulty%5B%5D=0&category%5B%5D=Searching&sortBy=submissions
+    int countZeroes(int[] arr, int n) {
+        // code here
+
+        // Optimised approach using BinarySearch
+        int s1 = 0, e1 = n-1, mid, firstZero = -1;
+
+        while(s1 <= e1){
+            mid = s1 + (e1 - s1) / 2;
+            if(arr[mid] == 0){
+                firstZero = mid;
+                e1 = mid - 1;
+            }
+
+            else if(arr[mid] == 1 )
+                s1 = mid + 1;
+
+            else
+                e1 = mid - 1;
+        }
+
+
+        int s2 = 0, e2 = n-1,  lastZero = -1;
+        while(s2 <= e2){
+            mid = s2 + (e2 - s2 ) / 2 ;
+            if(arr[mid] == 0){
+                lastZero = mid;
+                s2 = mid + 1;
+            }
+
+            else if(arr[mid] == 1 )
+                s2 = mid + 1;
+
+            else
+                e2 = mid - 1;
+        }
+
+        return lastZero - firstZero + 1;
+
+    }
 }
