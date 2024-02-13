@@ -148,4 +148,67 @@ public class HomeworkDay32 {
         }
         return -1;
     }
+
+
+    // Search in Rotated Sorted Array II -> https://leetcode.com/problems/search-in-rotated-sorted-array-ii/description/
+     static boolean searchInRoatedSortedArrayTwo(int[] nums, int target) {
+
+        int n =  nums.length;
+
+        for(int i = 0 ;i< n;i++)
+        {
+            if(target == nums[i])
+            {
+                return true;
+
+            }
+            else if(i==n-1 &&  target != nums[i])
+            {
+                break;
+            }
+        }
+        return false;
+    }
+
+    // 1608. Special Array With X Elements Greater Than or Equal X
+    // https://leetcode.com/problems/special-array-with-x-elements-greater-than-or-equal-x/description/
+    public static int specialArray(int[] nums) {
+        int start=0;
+        int end=nums.length;
+        while(start<=end){
+            int mid=start+(end-start)/2;
+            int count=0;
+            for(int i=0;i<nums.length;i++){
+                if(nums[i]>=mid){
+                    count++;
+                }
+            }
+            if(count==mid) return mid;
+            if(count>mid) start=mid+1;
+            else end=mid-1;
+        }
+        return -1;
+    }
+
+    // 367. Valid Perfect Square - > https://leetcode.com/problems/valid-perfect-square/description/?source=submission-ac
+    public static boolean isPerfectSquare(int num) {
+
+        // Optimise approach using Binary search
+        int start = 0, end = num;
+        while(start <= end){
+            long mid = start + (end - start) / 2;
+            long sqMid = mid * mid ;
+
+            if(sqMid == num){
+                return true;
+            }
+
+            else if(sqMid > num){
+                end = (int) mid -1;
+            }
+            else
+                start = (int) mid + 1 ;
+        }
+        return false;
+    }
 }
