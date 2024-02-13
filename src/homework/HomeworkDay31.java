@@ -163,4 +163,18 @@ public class HomeworkDay31 {
         return lastZero - firstZero + 1;
 
     }
+
+    // link - https://www.geeksforgeeks.org/problems/cube-root-of-a-number0915/1
+
+    static int cubeRoot(int x) {
+        // code here
+
+        int i = 1;
+
+        while(x >= i*i*i){
+            i++;
+        }
+
+        return i-1;
+    }
 }
