@@ -31,5 +31,25 @@ public class TwoSum {
         }
     }
 
+    // Using Two pointer Approach if the array is already sorted but you have to follow 1 based indexing TC = O(n)
+    public static int[] twoSumNew(int[] arr, int target) {
+        int i = 0, j = arr.length-1;
+        int[] ans = new int[2];
+        while(j > i){
+            int sum = arr[i] + arr[j];
+            if(sum == target){
+                ans[0] = i+1;
+                ans[1] = j+1;
+                break;
+            }
+            else if (sum > target) {
+                j--;
+            } else {
+                i++;
+            }
+        }
+        return  ans;
+    }
+
 
 }
