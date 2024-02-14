@@ -27,4 +27,32 @@ public class PairWithGivenDifference {
 
         }
     }
+
+    public static int pairWithGivenDifference(int[] arr, int target) {
+        Arrays.sort(arr);
+        int start = 0, end = 1;
+
+        if(target < 0)
+            target = target * -1;
+
+        while(end < arr.length){
+            int diff = arr[end] - arr[start];
+
+            if(diff == target)
+                return 1;
+
+            else if(diff < target){
+                end++;
+
+            }
+            else
+                start++;
+
+            if(start == end)
+                end++;
+
+        }
+
+        return 0;
+    }
 }
