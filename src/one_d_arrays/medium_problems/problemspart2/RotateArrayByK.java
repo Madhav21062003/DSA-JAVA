@@ -1,4 +1,4 @@
-package one_d_arrays.problemspart2;
+package one_d_arrays.medium_problems.problemspart2;
 
 public class RotateArrayByK {
     public static void main(String[] args) {

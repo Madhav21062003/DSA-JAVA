@@ -1,6 +1,4 @@
-package one_d_arrays.problemspart2;
-
-import java.util.Arrays;
+package one_d_arrays.medium_problems.problemspart2;
 
 public class ReverseArray {
     public static void main(String[] args) {

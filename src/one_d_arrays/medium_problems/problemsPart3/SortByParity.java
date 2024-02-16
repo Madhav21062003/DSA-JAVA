@@ -1,4 +1,4 @@
-package one_d_arrays.problemsPart3;
+package one_d_arrays.medium_problems.problemsPart3;
 
 public class SortByParity {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package one_d_arrays.problemspart4;
+package one_d_arrays.medium_problems.problemspart4;
 
 import java.util.Arrays;
 
