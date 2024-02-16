@@ -1,4 +1,4 @@
-package one_d_arrays;
+package one_d_arrays.medium_problems;
 
 import java.util.Scanner;
 

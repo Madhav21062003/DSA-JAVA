@@ -1,4 +1,4 @@
-package one_d_arrays.problemspart4;
+package one_d_arrays.medium_problems.problemspart4;
 
 public class CheckEqualityOfPrefixAndSuffixSum {
     public static void main(String[] args) {

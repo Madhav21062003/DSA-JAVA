@@ -1,4 +1,4 @@
-package one_d_arrays;
+package one_d_arrays.medium_problems;
 
 public class TripletSum {
     public static void main(String[] args) {
