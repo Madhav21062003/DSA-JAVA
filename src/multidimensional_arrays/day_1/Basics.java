@@ -1,4 +1,4 @@
-package multidimensional_arrays;
+package multidimensional_arrays.day_1;
 
 import java.util.Scanner;
 
