@@ -21,6 +21,8 @@ public class TransposeMatrix {
             System.out.println();
         }
         System.out.println( );
+
+        // Optimised Approach
         transposeMatrix(matrix,4,4);
     }
 
