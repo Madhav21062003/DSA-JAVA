@@ -8,12 +8,12 @@ public class SearchingIn2D {
                           {47,52,78,93,102},
                           {108,111,200,218,320}};
 
-        int key = 53;
+        int key = 320;
 
 
         System.out.println(searchMethodOne(matrix,4,5,key));
         System.out.println(searchMethodTwo(matrix,4,5,key));
-
+        System.out.println(searchMatrix(matrix,key));
     }
 
     // Bruteforce Approach
@@ -48,6 +48,29 @@ public class SearchingIn2D {
             }
         }
         return true;
+    }
+
+    // most optimised approach by O(log(m*n))
+    public static boolean searchMatrix(int[][] matrix, int target) {
+        int n = matrix.length;
+        int m = matrix[0].length;
+        int start = 0, end = n*m -1;
+
+        while(start <= end){
+            int mid = start + (end - start) / 2 ;
+            int rowIndex = mid / m;
+            int colIndex = mid % m;
+            if(matrix[rowIndex][colIndex] == target){
+                return true;
+            }
+            else if(matrix[rowIndex][colIndex] < target){
+                start = mid + 1;
+            }
+            else {
+                end = mid - 1;
+            }
+        }
+        return false;
     }
 
 }
