@@ -1,24 +1,27 @@
 package oops;
 
+import oops.pkg_1.Student;
+
+class Emoloyee{
+     int id;
+    String name;
+    int phoneNo;
+    String dept;
+}
 public class OOPBasics {
     public static void main(String[] args) {
 
-        // Declaration of class
-        Student s1 = new Student();
-        // Providing values
-        s1.name = "Madhav";
-        s1.rollNo = 39;
-        s1.percentage = 99.99;
-        System.out.println(s1.name);
-        System.out.println(s1.rollNo);
-        System.out.println(s1.percentage);
-    }
+        Emoloyee emp = new Emoloyee();
+        emp.id = 1;
+        emp.name = "User";
+        emp.dept = "sales";
+        emp.phoneNo = 123;
+        System.out.println(emp.id);
+        System.out.println(emp.name);
+        System.out.println(emp.dept);
+        System.out.println(emp.phoneNo);
 
-    public static class Student{
-
-        // Creating Mutilple data type
-        String name ;
-        int rollNo;
-        double percentage ;
+        Student st = new Student();
+        System.out.println(st.getName());
     }
 }
