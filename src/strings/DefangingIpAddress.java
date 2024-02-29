@@ -1,4 +1,4 @@
-package sorting;
+package strings;
 
 public class DefangingIpAddress {
     public static void main(String[] args) {
