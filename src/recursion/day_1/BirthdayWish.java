@@ -9,8 +9,9 @@ public class BirthdayWish {
 
     static void birthdayWish(int n, String name){
 
-        if (n==0)
-            System.out.println("Happy Birthday "+name);
+        if (n==0) {
+            System.out.println("Happy Birthday " + name);
+        }
 
         else {
             System.out.println(n+" days left for "+name+" birthday");
