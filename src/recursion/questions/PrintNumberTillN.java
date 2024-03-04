@@ -1,4 +1,4 @@
-package recursion;
+package recursion.questions;
 
 public class PrintNumberTillN {
     public static void main(String[] args) {

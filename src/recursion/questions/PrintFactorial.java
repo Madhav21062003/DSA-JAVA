@@ -1,4 +1,4 @@
-package recursion;
+package recursion.questions;
 import java.util.Scanner;
 public class PrintFactorial {
     public static void main(String[] args) {

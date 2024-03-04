@@ -1,4 +1,4 @@
-package recursion;
+package recursion.questions;
 
 public class PrintNumberInReverseOrder {
     public static void main(String[] args) {

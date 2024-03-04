@@ -1,4 +1,4 @@
-package recursion;
+package recursion.questions;
 
 import java.util.Scanner;
 

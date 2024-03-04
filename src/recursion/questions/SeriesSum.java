@@ -1,4 +1,4 @@
-package recursion;
+package recursion.questions;
 
 public class SeriesSum {
     public static void main(String[] args) {
