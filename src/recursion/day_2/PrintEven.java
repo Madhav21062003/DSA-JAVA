@@ -3,12 +3,9 @@ package recursion.day_2;
 public class PrintEven {
     public static void main(String[] args) {
         int n = 11 ;
-            if (n % 2 ==1){
-                n--;
-                printEven(n);
-            }
-            else
-                printEven(n);
+
+
+        printEven(n);
 
 
     }
@@ -19,7 +16,8 @@ public class PrintEven {
         if (n == 1)
             return;
 
-        System.out.println(n);
-        printEven(n-2);
+        printEven(n-1);
+        if (n % 2 == 0)
+            System.out.print(n+" ");
     }
 }
