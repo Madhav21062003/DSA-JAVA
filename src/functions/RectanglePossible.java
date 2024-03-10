@@ -8,6 +8,9 @@ public class RectanglePossible {
     }
    //Function to check the reactangle is possible or not
     static boolean rectanglePossible(int a, int b, int c, int d){
+
+
+   // possible cases to prove it is a rectangle
         if (a == b && a==c && a == d){
             return false;
         }
