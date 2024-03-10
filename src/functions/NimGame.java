@@ -8,6 +8,7 @@ public class NimGame {
     }
 
     static boolean canWinNim(int n){
+       // Check the remainder
         if(n % 4 == 0){
             return false;
         }
