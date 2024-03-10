@@ -16,6 +16,7 @@ public class ArmstrongNumber {
         int sum = 0;
         int x = num;
 
+    // armstrong number 
         while (x != 0){
             rem = x % 10;
             x = x / 10;
