@@ -11,7 +11,8 @@ public class RecLinearSearch {
        // Base case 
         if (idx == arr.length)
             return false;
-
+       
+        // Comparing every index item with key
         if (arr[idx] == key)
             return true;
 
