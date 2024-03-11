@@ -8,6 +8,7 @@ public class RecLinearSearch {
     }
 
     static boolean recursiveLinearSearch(int[] arr, int key, int idx){
+       // Base case 
         if (idx == arr.length)
             return false;
 
