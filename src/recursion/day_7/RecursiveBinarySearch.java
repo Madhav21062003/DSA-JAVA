@@ -9,6 +9,8 @@ public class RecursiveBinarySearch {
 
     static boolean search(int[] a, int start, int end, int key){
 
+        // IF THE ELEMENT IS NOT find
+       // into the array
         if (start > end)
             return false;
 
