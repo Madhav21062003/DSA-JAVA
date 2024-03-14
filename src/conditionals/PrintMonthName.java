@@ -9,6 +9,8 @@ public class PrintMonthName {
         int month;
         System.out.println("Enter Month number ");
         month = sc.nextInt();
+       
+// Identifying the month name using their number
         if (month == 1)
             System.out.println("January");
              //conditions for months num
