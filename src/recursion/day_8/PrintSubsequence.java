@@ -20,9 +20,11 @@ public class PrintSubsequence {
             ans.add(new ArrayList<>(temp));
             return;
         }
+
+        subseq(arr, index + 1, n, ans, temp);
         temp.add(arr[index]);
+
         subseq(arr, index + 1, n, ans, temp);
         temp.remove(temp.size() - 1);
-        subseq(arr, index + 1, n, ans, temp);
     }
 }
