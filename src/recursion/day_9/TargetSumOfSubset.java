@@ -17,7 +17,6 @@ public class TargetSumOfSubset {
         if (idx == n || target < 0)
             return false;
 
-
         return find(arr,idx+1,n,target) || find(arr,idx+1,n,target-arr[idx]);
     }
 }
