@@ -13,6 +13,8 @@ public class OOPBasics {
 
 // Creating object of Employee class
         Emoloyee emp = new Emoloyee();
+
+// assigning the values reference variable
         emp.id = 1;
         emp.name = "User";
         emp.dept = "sales";
