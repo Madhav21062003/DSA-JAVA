@@ -11,6 +11,7 @@ class Emoloyee{
 public class OOPBasics {
     public static void main(String[] args) {
 
+// Creating object of Employee class
         Emoloyee emp = new Emoloyee();
         emp.id = 1;
         emp.name = "User";
