@@ -8,7 +8,7 @@ public class PascalsTriangle {
         printMatrix(ans);
     }
 
-
+// get pascale triangle matrix
     static int[][] pascalsTriangle(int n){
         int[][] ans = new int[n][];
 
