@@ -7,6 +7,7 @@ public class GenerateSpiralMatrix {
         printArray(ans);
     }
 
+// generate the spiral matrix
     static int[][] generateSpiralMatrix(int n) {
 
         int[][] matrix = new int[n][n];

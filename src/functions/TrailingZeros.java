@@ -9,6 +9,7 @@ public class TrailingZeros {
     }
     static int trailingZeros(int num){
 
+// No of zeros
         int count = 0;
        while (num >= 5){
            count = count + num / 5;
