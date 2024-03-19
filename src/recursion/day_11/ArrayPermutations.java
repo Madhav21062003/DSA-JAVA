@@ -7,18 +7,19 @@ public class ArrayPermutations {
     public static void main(String[] args) {
 
         // Method - 1 using extra space
-//        int[] arr_1 = {1, 2, 3};
-//        List<List<Integer>> ans_1 = new ArrayList<>();
-//        List<Integer> temp = new ArrayList<>();
-//        boolean[] visited = new boolean[arr_1.length];
-//        permut(arr_1, ans_1, temp, visited);
-//
-//        // Printing the permutations
-//        for (List<Integer> permutation : ans_1) {
-//            System.out.println(permutation);
-//        }
+        int[] arr_1 = {1, 2, 3};
+        List<List<Integer>> ans_1 = new ArrayList<>();
+        List<Integer> temp = new ArrayList<>();
+        boolean[] visited = new boolean[arr_1.length];
+        permut(arr_1, ans_1, temp, visited);
 
+        System.out.println("Possible Combinations");
+        // Printing the permutations
+        for (List<Integer> permutation : ans_1) {
+            System.out.print(permutation+", ");
+        }
 
+        System.out.println();
 
         // Method 2  ->  Without Using Extra Space
         List<Integer> arr = new ArrayList<>();
@@ -30,7 +31,7 @@ public class ArrayPermutations {
 
         // Printing the permutations
         for (List<Integer> permutation : ans) {
-            System.out.println(permutation);
+            System.out.print(permutation+", ");
         }
     }
 
