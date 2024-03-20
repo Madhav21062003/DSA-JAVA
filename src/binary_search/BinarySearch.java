@@ -5,6 +5,7 @@ public class BinarySearch {
 
 // Giving input array
         int[] arr = {2, 4, 5, 7, 24, 45, 50, 77};
+// Element want to search
         int key = 7;
 
         int[] arrDes = {50,40,30,20,10};
