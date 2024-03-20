@@ -3,6 +3,7 @@ package binary_search;
 public class BinarySearch {
     public static void main(String[] args) {
 
+// Giving input array
         int[] arr = {2, 4, 5, 7, 24, 45, 50, 77};
         int key = 7;
 
