@@ -29,7 +29,7 @@ public class BinarySearch {
 // go to right side of the array
             else if (arr[mid] < target)
                 start = mid + 1;
-
+// search element in left part of the array
             else
                 end = mid - 1;
         }
