@@ -26,6 +26,7 @@ public class BinarySearch {
             if (arr[mid] == target)
                 return mid;
 
+// go to right side of the array
             else if (arr[mid] < target)
                 start = mid + 1;
 
