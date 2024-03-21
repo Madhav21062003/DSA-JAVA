@@ -7,6 +7,7 @@ public class BirthdayWish {
         birthdayWish(5,name);
     }
 
+// Print message by using recursive call
     static void birthdayWish(int n, String name){
 
         if (n==0) {
