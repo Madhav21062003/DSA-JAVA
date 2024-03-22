@@ -43,6 +43,7 @@ public class ReverseArrayList {
             int j = list.size()-1;
 
             while (i < j){
+// storing value in temp node and the swap it
                 Integer temp = Integer.valueOf(list.get(i));
                 list.set(i, list.get(j));
                 list.set(j, temp);
