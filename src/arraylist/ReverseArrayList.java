@@ -36,6 +36,8 @@ public class ReverseArrayList {
 
     }
 
+// Function to reverse the list
+
     static void reverseArrayList(ArrayList<Integer> list){
             int i = 0;
             int j = list.size()-1;
