@@ -3,7 +3,9 @@ package binary_search;
 public class BinarySearch {
     public static void main(String[] args) {
 
+// Giving input array
         int[] arr = {2, 4, 5, 7, 24, 45, 50, 77};
+// Element want to search
         int key = 7;
 
         int[] arrDes = {50,40,30,20,10};
@@ -24,9 +26,10 @@ public class BinarySearch {
             if (arr[mid] == target)
                 return mid;
 
+// go to right side of the array
             else if (arr[mid] < target)
                 start = mid + 1;
-
+// search element in left part of the array
             else
                 end = mid - 1;
         }

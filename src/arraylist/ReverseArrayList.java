@@ -36,11 +36,14 @@ public class ReverseArrayList {
 
     }
 
+// Function to reverse the list
+
     static void reverseArrayList(ArrayList<Integer> list){
             int i = 0;
             int j = list.size()-1;
 
             while (i < j){
+// storing value in temp node and the swap it
                 Integer temp = Integer.valueOf(list.get(i));
                 list.set(i, list.get(j));
                 list.set(j, temp);
