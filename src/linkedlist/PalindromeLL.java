@@ -50,6 +50,7 @@ public class PalindromeLL {
         }
         return prev ;
     }
+// checking list is palindrome or not
     public boolean isPalindrome(ListNode head) {
         ListNode slow = head ;
         ListNode fast = head ;
