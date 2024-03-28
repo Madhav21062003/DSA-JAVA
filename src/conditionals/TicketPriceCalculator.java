@@ -2,6 +2,8 @@ package conditionals;
 
 import java.util.Scanner;
 
+
+// Calculate ticket prices
 public class TicketPriceCalculator {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
