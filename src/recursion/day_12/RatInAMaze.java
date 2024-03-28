@@ -6,8 +6,8 @@ import java.util.List;
 public class RatInAMaze {
     public static void main(String[] args) {
         // Example usage:
-        int n = 4; // Example matrix size
-        int[][] matrix = new ArrayList<>();
+//        int n = 4; // Example matrix size
+//        int[][] matrix = new ArrayList<>();
 
         // Fill the matrix with appropriate values
         // Example: matrix.get(i).add(value);
@@ -16,19 +16,19 @@ public class RatInAMaze {
         List<String> ans = new ArrayList<>();
 
         // 2D List to track visited cells
-        List<List<Boolean>> visited = new ArrayList<>();
-        for (int i = 0; i < n; i++) {
-            visited.add(new ArrayList<>(n));
-            for (int j = 0; j < n; j++) {
-                visited.get(i).add(false);
-            }
-        }
+//        List<List<Boolean>> visited = new ArrayList<>();
+//        for (int i = 0; i < n; i++) {
+//            visited.add(new ArrayList<>(n));
+//            for (int j = 0; j < n; j++) {
+//                visited.get(i).add(false);
+//            }
+//        }
 
         // StringBuilder to store current path
         StringBuilder path = new StringBuilder();
 
         // Find all possible paths starting from (0, 0)
-        total(matrix, 0, 0, n, path, ans, visited);
+//        total(matrix, 0, 0, n, path, ans, visited);
 
         // Print all possible paths
         for (String p : ans) {
