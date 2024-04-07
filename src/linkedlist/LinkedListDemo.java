@@ -69,23 +69,33 @@ public class LinkedListDemo {
 
         void deleteAt(int idx){
             Node temp = head;
-            if (idx == 0 ) {
-                head = head.next;
-            }
-            else if (idx == length() - 1) {
-                // Traverse to the second last node
-                while (temp.next.next != null) {
-                    temp = temp.next;
+            if (head != null) {
+
+                // LL contains Only One Item in a list
+                if (temp.next == null){
+                    head = null;
                 }
-                // Remove the last node
-                temp.next = null;
-                tail = temp;
+
+                // Delete Node of first Index
+                if (idx == 0) {
+                    head = head.next;
+                } else if (idx == length() - 1) {
+                    // Traverse to the second last node
+                    while (temp.next.next != null) {
+                        temp = temp.next;
+                    }
+                    // Remove the last node
+                    temp.next = null;
+                    tail = temp;
+                } else {
+                    for (int i = 1; i <= idx - 1; i++) {
+                        temp = temp.next;
+                    }
+                    temp.next = temp.next.next;
+                }
             }
             else {
-                for (int i=1; i<=idx-1; i++){
-                    temp = temp.next;
-                }
-                temp.next = temp.next.next;
+                System.out.println("Linked list is empty");
             }
 
         }
@@ -167,8 +177,16 @@ public class LinkedListDemo {
         ll.size();
         ll.display();
         System.out.println(ll.tail.data);
+        System.out.println(ll.head.data);
 
 
+        ll.insertAtPosition(2,7);
+        ll.display();
+        System.out.println(ll.tail.data);
+
+        ll.deleteAt(2);
+        ll.display();
+        System.out.println(ll.tail.data);
 
     }
 }
