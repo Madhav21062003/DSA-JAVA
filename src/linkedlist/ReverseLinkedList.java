@@ -5,7 +5,7 @@ import java.util.List;
 
 public class ReverseLinkedList {
 
-    public static class ListNode {
+    public static class ListNode extends MiddleOfLinkedList.ListNode {
         int val;
         ListNode next;
 
