@@ -23,44 +23,54 @@ public class RemoveNthNodeFromLast {
         c.next = d ;
         d.next = e;
 
-    a =   removeFromLast(a, 5);
+      a =   removeNthFromEnd(a, 2);
       printList(a);
 
 
 
     }
 
-    private static ListNode removeNthNode(ListNode head, int n) {
+    public static ListNode removeNthFromEnd(ListNode head, int n) {
+        ListNode temp = head;
 
-        if (head == null )
-            return null ;
+        if(temp == null){
+            return null;
+        }
 
-        if (head.next == null && n ==1)
-            return null ;
+        if(temp.next == null && n == 1){
+            return null;
+        }
 
-        ListNode temp = head ;
-        int size = 0 ;
+        int count = 0;
 
-        while (temp != null){
-
+        while(temp != null){
+            count++;
             temp = temp.next;
-            size++;
         }
 
-        if (n == size){
+        count = count - n ;
+
+        // if we eant to delete the first Node i.e count = 0;
+        if(count == 0){
+            temp = head;
             head = head.next;
-            return head ;
+
+            return head;
         }
 
-        ListNode newNode = head;
-        int t = 0;
+        ListNode curr = head;
+        ListNode prev = null;
 
-        while (t < (size - n - 1)){
-            newNode = newNode.next;
-            t++;
+        while(count != 0){
+            prev = curr;
+            curr = curr.next;
+            count = count - 1;
         }
+        prev.next = curr.next;
+
         return head;
     }
+
     public static void printList(ListNode  head){
         ListNode temp = head ;
 
@@ -70,37 +80,5 @@ public class RemoveNthNodeFromLast {
         }
     }
 
-    // Remove Node from last from any position
-    public static ListNode removeFromLast(ListNode head, int n){
 
-        if (head == null )
-            return null;
-
-        if (head.next == null && n ==1)
-            return null;
-
-
-
-        ListNode dummy = new ListNode(0);
-        dummy.next = head;
-        ListNode slow = dummy;
-        ListNode fast = dummy;
-
-        for (int i = 0; i <= n ; i++) {
-                fast = fast.next;
-        }
-        if (fast == null){
-            head = head.next;
-            return head;
-        }
-
-        while (fast != null){
-            slow = slow.next;
-            fast = fast.next;
-        }
-
-        slow.next = slow.next.next;
-
-        return dummy.next;
-    }
 }
