@@ -1,4 +1,4 @@
-package linkedlist;
+package linkedlist.singlyLL;
 
 public class Implementation {
 
