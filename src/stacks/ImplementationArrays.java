@@ -1,10 +1,9 @@
 package stacks;
 
 
+class ImplementationArrays {
 
-public class ImplementationArrays {
-
-    static public class Stack{
+    private static class Stack{
         int[] arr;
         int size;
         int top;
