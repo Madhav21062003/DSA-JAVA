@@ -3,59 +3,101 @@ package stacks;
 
 
 public class ImplementationArrays {
-    public static class Stack {
-       private int[] arr = new int[5];
-        private int idx = 0;
 
-       void push(int x){
-            arr[idx] = x;
-            idx++;
-       }
+    static public class Stack{
+        int[] arr;
+        int size;
+        int top;
 
-       int peek(){
-        if (idx == 0) {
-            System.out.println("Stack is Empty");
-            return -1 ;
+        // For handling negative number case
+        boolean flag ;
+        // Constructor
+        public Stack(int size){
+            this.size = size;
+            top = -1;
+            arr = new int[size];
+            flag = true;  // Stack is Empty
         }
-        return arr[idx-1];
-       }
 
-       int pop(){
-            if (idx == 0) {
-                System.out.println("Stack is empty");
+        // Push
+        void push(int value){
+            if (top == size-1){
+                System.out.println("Stack Overflow");
+                return;
+            }
+            else {
+                top++;
+                arr[top] = value;
+                System.out.println("Value "+value+" pushed ino the stack");
+                flag = false;  // Stack is not empty
+            }
+        }
+
+        // POP
+        void pop(){
+            if (top == -1){
+                System.out.println("Stack is Underflow");
+            }
+            else {
+                System.out.println("Popped "+arr[top]+" from the stack");
+                top--;
+                if (top == -1){
+                    flag = true; // Stack is Empty Now
+                }
+            }
+        }
+
+        // PEEK
+        int peek(){
+            if (top == -1){
+                System.out.println("Stack is Empty");
                 return -1;
             }
-            int top = arr[idx-1];
-            arr[idx-1] = 0 ;
-            idx--;
-            return top; 
-       }
-       
-       void display(){
-            for (int i = 0; i < idx-1; i++) {
-                System.out.print(arr[i]+" ");
+            else {
+                return arr[top];
             }
-            System.out.println();
-       }
 
-       int size(){
-            return idx;
-       }
+        }
+
+        // IsEmpty
+        boolean isEmpty(){
+
+            if (top == -1){
+                return true;
+            }
+            return false;
+        }
+
+        // IsSize
+        int isSize(){
+            return top+1;
+        }
+
+
     }
-
     public static void main(String[] args) {
-        
-        Stack st = new Stack();
 
-        st.push(4);
-        st.display();
+        Stack st = new Stack(5);
+
         st.push(5);
-        st.display();
-        st.push(1);
-        st.display();   
-        System.out.println(st.size());
-        st.pop();  // 4 5 1
-        st.display();
-        System.out.println(st.size());
+        st.push(6);
+        st.push(7);
+        st.push(8);
+
+        st.pop();
+        st.pop();
+
+        int peekElement = st.peek();
+        System.out.println(peekElement);
+
+        System.out.println(st.isEmpty());
+        System.out.println(st.isSize());
+
+        st.push(-10);
+        int value = st.peek();
+        if (st.flag == false){
+            System.out.println(value);
+        }
+
     }
 }
