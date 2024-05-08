@@ -8,7 +8,9 @@ public class LargestRectangleInHistogram {
         int[] height = {2,3,4,2,6,5,4,5,3};
 
 
-        System.out.println(largestHistogram(height));
+//        System.out.println(largestHistogram(height));
+
+        System.out.println(largestRectangleInHistogram(height));
 
     }
 
@@ -51,6 +53,43 @@ public class LargestRectangleInHistogram {
         int ans = 0;
         for (int i = 0; i < n; i++) {
             ans = Math.max(ans, height[i]*(right[i] - left[i]-1));
+        }
+
+        return ans;
+    }
+
+
+    // Optimised approach
+    static int largestRectangleInHistogram(int[] height){
+        int ans = 0;
+        int n = height.length;
+        Stack<Integer> st = new Stack<>();
+
+        int idx ;
+        for (int i = 0; i < n; i++) {
+
+            while (!st.empty() && height[st.peek()] > height[i]){
+                 idx = st.peek();
+                st.pop();
+                if (!st.empty()){
+                    ans = Math.max(ans, height[idx] * (i-st.peek()-1));
+                }
+                else {
+                    ans = Math.max(ans, height[idx] * i);
+                }
+            }
+            st.push(i);
+        }
+
+        while (!st.empty()){
+            idx = st.peek();
+            st.pop();
+
+            if (!st.empty()){
+                ans = Math.max(ans, height[idx] * (n-st.peek()-1));
+            }else {
+                ans = Math.max(ans,height[idx] * n);
+            }
         }
 
         return ans;
